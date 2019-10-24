@@ -851,3 +851,12 @@ img::-moz-selection {
 body {
     webkit-tap-highlight-color: #048a81;
 }
+
+.tag-list {
+    color: #fff;
+    background: #048a81;
+    display: inline-block;
+    border-radius: 6px;
+    padding: 4px;
+    margin: 4px;
+}
