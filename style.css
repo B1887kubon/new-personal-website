@@ -621,27 +621,6 @@ section h3.section-subheading {
     }
 }
 
-.team-member {
-    margin-bottom: 50px;
-    text-align: center;
-}
-
-.team-member img {
-    margin: 0 auto;
-    border: 7px solid #fff;
-}
-
-.team-member h4 {
-    margin-top: 25px;
-    margin-bottom: 0;
-    text-transform: none;
-}
-
-.team-member p {
-    margin-top: 0;
-}
-
-
 section#contact {
     background-color: #222;
     background-image: url(images/stars_1.jpg);
@@ -859,4 +838,10 @@ body {
     border-radius: 6px;
     padding: 4px;
     margin: 4px;
+}
+
+@media(min-width:768px) {
+    .ul-tag-list{
+        display: none;
+    }
 }
