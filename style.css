@@ -827,9 +827,6 @@ img::-moz-selection {
     background: 0 0;
 }
 
-body {
-    webkit-tap-highlight-color: #048a81;
-}
 
 .tag-list {
     color: #fff;
@@ -843,5 +840,65 @@ body {
 @media(max-width:768px) {
     .ul-tag-list{
         display: none;
+    }
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.87);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+    overflow: scroll;
+}
+
+.overlay:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+.popup {
+    margin: 200px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    width: 30%;
+    position: relative;
+    transition: all 5s ease-in-out;
+}
+
+.popup h2 {
+    margin-top: 0;
+    color: #048a81;
+    font-family: "Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.popup .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.87)
+}
+
+.popup .close:hover{
+    color: #048a81;
+}
+
+.popup .content {
+    max-height: 30%;
+    overflow: auto;
+}
+
+@media screen and (max-width: 768px) {
+    .popup {
+        width: 70%;
     }
 }
