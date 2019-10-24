@@ -840,7 +840,7 @@ body {
     margin: 4px;
 }
 
-@media(min-width:768px) {
+@media(max-width:768px) {
     .ul-tag-list{
         display: none;
     }
